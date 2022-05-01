@@ -19,8 +19,10 @@ if(isset($_POST['create'])){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $usertype = $_POST['usertype'];
 
-    $sql = "INSERT INTO USERS (username, email, password) VALUES('$username', '$email', '$password')";
+
+    $sql = "INSERT INTO users (username, email, password, usertype) VALUES('$username', '$email', '$password', '$usertype')";
     if($conn->query($sql) === TRUE){
         echo 'saved';
     }else{
@@ -46,6 +48,9 @@ if(isset($_POST['create'])){
 
             <label for="password"><b>Password</b></label>
             <input type="text" name="password" required>
+
+            <label for="usertype"><b>User Type</b></label>
+            <input type="text" name="usertype" required>
 
             <input type="submit" name="create" value="Sign Up">
         </div>
