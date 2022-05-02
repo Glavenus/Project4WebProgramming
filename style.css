@@ -1,0 +1,9 @@
+form {
+    display: table;
+}
+p {
+    display: table-row;
+}
+label, input {
+    display: table-cell;
+}
