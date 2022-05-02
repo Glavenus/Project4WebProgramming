@@ -23,17 +23,20 @@ $login_err = "";
 
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Assignment Demo</title>
+	<title>PropertyRus Login</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 	<div>
-			<form action="homepage.php" method="post"></form>	
-			<p>Username: <input id="name" type="text"></p>
-			<p>email: <input name="email" type="email"></p>
-			<p>Password: <input name="password" type="password"></p>
+			<form action="homepage.php" method="post">	
+				<p><label for="username"><b>Username</b></label>
+				<input id="name" type="text">
+				<p><label for="password"><b>Password</b></label>
+				<input name="password" type="password">
 			
-			<input type="submit" id="btn0" value="Login">
+				<input type="submit" id="btn0" value="Login">
+			</form>
 		
 	</div>
 </body>
